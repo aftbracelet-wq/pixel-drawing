@@ -1,0 +1,14 @@
+div {
+    border: 1px solid rgb(0, 0, 0);
+    height: 60px;
+    width: 60px;
+    flex-flow: row wrap;
+}
+
+#square {
+    width: 960px;
+    height: 960px;
+    border: none;
+    display: flex;
+    background-color: aliceblue;
+}

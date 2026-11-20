@@ -1,16 +1,23 @@
-div {
-    border: 1px solid rgb(0, 0, 0);
-    height: 60px;
-    width: 60px;
-    flex-flow: row wrap;
+.box, .hovered {
+    border: 1px solid black;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.row {
+    width: auto;
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
 }
 
 #square {
-    width: 1000px;
-    height: 1000px;
+    width: 960px;
+    height: 960px;
     border: none;
     display: flex;
     background-color: white;
+    flex-flow: column;
 }
 
 .hovered {

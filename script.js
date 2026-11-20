@@ -31,9 +31,12 @@ btn.addEventListener('click', (f) => {
     let stringSize = prompt("how big do you want it?",16);
     let size = parseInt(stringSize);
     if (isNaN(size) == true){
-        alert("Invalid input, resetting to standard")
+        alert("Invalid input, resetting to standard");
         makeGrid(16);
-    } else{
+    } else if (size > 100){
+        alert("Input to high, resetting to max");
+        makeGrid(100);
+    } else {
         makeGrid(size);
     }
 })

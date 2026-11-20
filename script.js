@@ -1,8 +1,8 @@
 const square = document.getElementById('square');
 
 function makeRow(num){
-    for (i=0;i < num;i++){
-        square.appendChild(document.createElement("div"));
+    for (j=0;j < num;j++){
+        square.appendChild(document.createElement("div")).className = "box";
     }
 }
 
@@ -13,3 +13,11 @@ function makeGrid(rows){
 }
 
 makeGrid(16);
+
+const boxes = document.getElementsByClassName("box");
+
+boxes.forEach(box => {
+    box.addEventListener("mouseover",  (e) => {
+    box.style.backGroundColor = black;
+});
+});

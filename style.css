@@ -10,5 +10,9 @@ div {
     height: 1000px;
     border: none;
     display: flex;
-    background-color: aliceblue;
+    background-color: white;
+}
+
+.hovered {
+    background-color: black;
 }

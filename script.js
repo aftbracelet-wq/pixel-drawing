@@ -1,4 +1,5 @@
 const square = document.getElementById('square');
+const btn = document.getElementById('resetBtn');
 
 function makeRow(num){
     for (j=0;j < num;j++){
@@ -15,9 +16,9 @@ function makeGrid(rows){
 makeGrid(16);
 
 const boxes = document.getElementsByClassName("box");
-
-boxes.forEach(box => {
-    box.addEventListener("mouseover",  (e) => {
-    box.style.backGroundColor = black;
+length = boxes.length;
+for (let k = 0;k<length;k++){
+    boxes[k].addEventListener("mouseover",  (e) => {
+    boxes[k].classList.add("hovered");
 });
-});
+};
